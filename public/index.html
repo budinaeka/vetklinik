@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VetKlinik — Manajemen Klinik Hewan</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-logo">🐾</div>
+          <div class="brand-text">
+            <div class="brand-name" id="brandName">VetKlinik</div>
+            <div class="brand-sub">Manajemen Klinik Hewan</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#/dashboard" data-route="dashboard"><span class="ic">🏠</span> Beranda</a>
+          <a href="#/appointments" data-route="appointments"><span class="ic">📅</span> Janji &amp; Kedatangan</a>
+          <a href="#/patients" data-route="patients"><span class="ic">🐾</span> Pasien</a>
+          <a href="#/owners" data-route="owners"><span class="ic">👤</span> Pemilik</a>
+          <a href="#/records" data-route="records" data-roles="admin,dokter"><span class="ic">📋</span> Rekam Medis</a>
+          <a href="#/vaccinations" data-route="vaccinations" data-roles="admin,dokter"><span class="ic">💉</span> Vaksinasi</a>
+          <a href="#/invoices" data-route="invoices"><span class="ic">🧾</span> Tagihan</a>
+          <a href="#/asisten" data-route="asisten" data-roles="admin,dokter"><span class="ic">🤖</span> Asisten Kasus</a>
+          <a href="#/komunikasi" data-route="komunikasi"><span class="ic">💬</span> Komunikasi</a>
+          <div class="nav-sep"></div>
+          <a href="#/users" data-route="users" data-roles="admin"><span class="ic">👥</span> Pengguna</a>
+          <a href="#/settings" data-route="settings" data-roles="admin"><span class="ic">⚙️</span> Pengaturan</a>
+        </nav>
+        <div class="sidebar-foot" id="sidebarFoot"></div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+          <div class="topbar-title" id="pageTitle">Beranda</div>
+          <div class="topbar-date" id="topDate"></div>
+        </header>
+        <main id="view" class="view"></main>
+      </div>
+    </div>
+
+    <div id="auth" class="auth-screen" hidden></div>
+
+    <div id="modal" class="modal-root"></div>
+    <div id="toast" class="toast-box"></div>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

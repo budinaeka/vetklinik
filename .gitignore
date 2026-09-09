@@ -1,0 +1,13 @@
+# Dependensi
+node_modules/
+
+# Rahasia & konfigurasi lokal (berisi API key!)
+.env
+
+# Database & berkas WAL SQLite
+data/
+
+# Log & berkas OS
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "vetklinik",
+      "url": "http://localhost:3111",
+      "port": 3111
+    }
+  ]
+}
